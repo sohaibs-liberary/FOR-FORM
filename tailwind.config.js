@@ -9,4 +9,16 @@ export default {
   },
   plugins: [],
 }
+const mainmenu = [
+    {
+        id: 1,
+        name: "Home",
+        link: "/#",
+    },
+    {
+        id: ,
+        name: "Home",
+        link: "/#",
+    },
+];
 
