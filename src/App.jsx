@@ -1,14 +1,14 @@
 import React from 'react'
 import { Routes, Route } from "react-router-dom";
 import { TbRouteSquare } from 'react-icons/tb';
-import Header from './Components/Header/Header.jsx'
+import Navbar from './Components/Navbar/Navbar.jsx';
 import Home from './Components/Home/Home.jsx';
 
 const App = () => {
   return (
     <>
     
-    <Header />
+    <Navbar />
     <Routes>
       <Route path='/' element={<Home />} />
 
