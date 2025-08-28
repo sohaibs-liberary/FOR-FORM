@@ -1,10 +1,24 @@
 import React from "react";
+import { useState,useEffect } from "react";
 
-const LatestProducts = ({ posts }) => {
+
+const LatestProducts = () => {
+
+const [data,setdata] =useState([])
+const [postno,setpostno] = useState(0)
+
+  useEffect(() =>{
+    fetch("https://api.escuelajs.co/api/v1/products")
+    .then((responsive) => responsive.json())
+    .then((data) =>setdata(data))
+    .catch((error)=>console.log('this is error during fetch api',error))
+  },[]);
+
   return (
+    
+ <>
 
-    <>
-      <div className="py-12">
+         <div className="py-12">
         <div>
           <div className="flex justify-center gap-4 ">
             <div className="latestpost flex justify-center gap-4 ">
@@ -24,12 +38,14 @@ const LatestProducts = ({ posts }) => {
         {/* API IMPORT */}
         <div className="API">
           <div className="fetch-api">
-            <ul>
-              {posts && posts.length > 0 ? (
-                posts.slice(0, 5).map((post) => (
+            <ul className="postsitems flex " >
+              {data? (
+                data.map((post) => (
                   <li key={post.id} className="p-4 border rounded-lg shadow">
-                    <img src={post.images[0]} alt={post.title} />
-                    <h1>{post.title}</h1>
+                    <img src={post.images[0]} alt='image of products ' className="max-w-[290px] max-h-[290px] "/>
+                   <h1>${post.price}</h1>
+                  <h1>{post.title}</h1>
+                  <h1>{post.name}</h1>
                   </li>
                 ))
               ) : (
