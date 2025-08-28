@@ -5,7 +5,6 @@ import { useState,useEffect } from "react";
 const LatestProducts = () => {
 
 const [data,setdata] =useState([])
-const [postno,setpostno] = useState(0)
 
   useEffect(() =>{
     fetch("https://api.escuelajs.co/api/v1/products")
@@ -16,7 +15,8 @@ const [postno,setpostno] = useState(0)
 
   return (
     
- <>
+
+    <>
 
          <div className="py-12">
         <div>
@@ -38,14 +38,14 @@ const [postno,setpostno] = useState(0)
         {/* API IMPORT */}
         <div className="API">
           <div className="fetch-api">
-            <ul className="postsitems flex " >
-              {data? (
-                data.map((post) => (
-                  <li key={post.id} className="p-4 border rounded-lg shadow">
-                    <img src={post.images[0]} alt='image of products ' className="max-w-[290px] max-h-[290px] "/>
-                   <h1>${post.price}</h1>
-                  <h1>{post.title}</h1>
-                  <h1>{post.name}</h1>
+            <ul className="postsitems grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 " >
+              {data.length>0? (
+                data.slice(0,10).map((post) => (
+                  <li key={post.id} className=" border rounded-lg shadow m-3 text-center ">
+                    <img src={post.images[0]} alt='image of products ' className="max-w-[150px] max-h-[150px] rounded-md mx-10"/>
+                   <p className="font-semibold text-center " >${post.price}</p>
+                  <h1  className="font-bold text-2xl " >{post.title}</h1>
+                  
                   </li>
                 ))
               ) : (
