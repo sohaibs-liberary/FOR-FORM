@@ -1,24 +1,19 @@
 import React from "react";
-import { useState,useEffect } from "react";
-
+import { useState, useEffect } from "react";
 
 const LatestProducts = () => {
+  const [data, setdata] = useState([]);
 
-const [data,setdata] =useState([])
-
-  useEffect(() =>{
+  useEffect(() => {
     fetch("https://api.escuelajs.co/api/v1/products")
-    .then((responsive) => responsive.json())
-    .then((data) =>setdata(data))
-    .catch((error)=>console.log('this is error during fetch api',error))
-  },[]);
+      .then((responsive) => responsive.json())
+      .then((data) => setdata(data))
+      .catch((error) => console.log("this is error during fetch api", error));
+  }, []);
 
   return (
-    
-
     <>
-
-         <div className="py-12">
+      <div className="py-12">
         <div>
           <div className="flex justify-center gap-4 ">
             <div className="latestpost flex justify-center gap-4 ">
@@ -36,16 +31,24 @@ const [data,setdata] =useState([])
         </div>
 
         {/* API IMPORT */}
-        <div className="API">
-          <div className="fetch-api">
-            <ul className="postsitems grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 " >
-              {data.length>0? (
-                data.slice(0,10).map((post) => (
-                  <li key={post.id} className=" border rounded-lg shadow m-3 text-center ">
-                    <img src={post.images[0]} alt='image of products ' className="max-w-[150px] max-h-[150px] rounded-md mx-10"/>
-                   <p className="font-semibold text-center " >${post.price}</p>
-                  <h1  className="font-bold text-2xl " >{post.title}</h1>
-                  
+        <div className="API lg:translate-x-40">
+          <div className="posts lg:h-[400px ] lg:w-[1400px]  lg:items-center  lg:flex lg:justify-center ">
+            <ul className="postsitems grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 ">
+              {data.length > 0 ? (
+                data.slice(0, 10).map((post) => (
+                  <li
+                    key={post.id}
+                    className=" border rounded-lg shadow m-3 text-center "
+                  >
+                    <img
+                      src={post.images[0]}
+                      alt="image of products "
+                      className="max-w-[150px] max-h-[150px] rounded-md mx-10 lg:my-4 "
+                    />
+                    <p className="font-semibold text-center my-2">
+                      ${post.price}
+                    </p>
+                    <h1 className="font-bold text-2xl my-2 ">{post.title}</h1>
                   </li>
                 ))
               ) : (
