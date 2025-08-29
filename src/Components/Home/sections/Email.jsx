@@ -11,10 +11,10 @@ const Email = () => {
     </div>
     <div className="email flex justify-center py-20 ">
         <div className="email   ">
-            <input type="email" placeholder='Enter Your Email' className=' h-[70px] w-[450px] border-gray-500 border-[1px] p-6 ' />
+            <input type="email" placeholder='Enter Your Email' className=' h-[70px] lg:w-[450px]  w-[260px] border-gray-500 border-[1px] p-6 ' />
         </div>
         <div className="button">
-          <input type="button"  value="Subscibe" className='h-[70px] w-[200px] bg-black  text-white cursor-pointer text-xl '  />
+          <input type="button"  value="Subscibe" className='h-[70px] lg:w-[200px] bg-black  text-white cursor-pointer text-xl  w-[140px] '  />
         </div>
         
     </div>
