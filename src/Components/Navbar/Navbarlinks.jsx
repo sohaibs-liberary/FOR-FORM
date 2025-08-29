@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-function NavbarItem({ to, label, activeColor = "blue-500", textColor = "gray-700" }) {
+function NavbarItem({ to, label, activeColor = "gray-500", textColor = "gray-700" }) {
   return (
     <NavLink
       to={to}
