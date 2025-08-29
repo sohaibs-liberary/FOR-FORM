@@ -24,7 +24,7 @@ const LatestProducts = () => {
               <p className="w-20 md:w-14 h-[2px] bg-gray-700"></p>
             </div>
           </div>
-          <p className="flex justify-center my-4 text-gray-600 lg:text-xl sm:text-xs font-normal lg:font-semibold ">
+          <p className="flex justify-center my-4 lg:mx-0 mx-3  text-gray-600 lg:text-xl sm:text-xs font-normal lg:font-semibold ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
             blanditiis temporibus iure architecto!
           </p>
@@ -50,7 +50,7 @@ const LatestProducts = () => {
                     </p>
                     <h1 className="font-bold text-2xl my-2 ">{post.title}</h1>
                   </li>
-                ))
+                ) )
               ) : (
                 <p className="flex justify-center">Loading...</p>
               )}
