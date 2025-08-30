@@ -36,8 +36,8 @@ const Allcollection = () => {
                       alt="image of products "
                       className="  "
                     />
-                    <h1 className="font-semibold text-xl my-2 ">{post.title}</h1>
-                    <p className="font-semibold my-2">
+                    <h6 className="font-semibold text my-2 mx-7">{post.title}</h6>
+                     <p className="font-semibold text-xl  my-2 mx-7">
                       ${post.price}
                     </p>
                   </li>

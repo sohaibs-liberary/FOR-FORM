@@ -43,9 +43,7 @@ const BestSeller = () => {
                       alt="Best Selling Products"
                       className=" "
                     />
-                    <h1 className=" text-2xl text-gray-800 font-semibold py-4 ">
-                      {post.title}
-                    </h1>
+                    <h6 className="font-semibold text my-2 mx-7">{post.title}</h6>
                   </li>
                 ))
               ) : (

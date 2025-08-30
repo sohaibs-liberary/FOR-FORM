@@ -3,11 +3,11 @@ import React from 'react'
 const Email = () => {
   return (
    <>
-   <div className="text-email">
+   <div className="text-email py-10 ">
 
     <div className="text">
-        <h1 className=' lg:text-4xl text-2xl font-semibold text-center' >Subscribe Now and get 20% off</h1>
-        <p className='lg:text-2xl text-center text-gray-600 ' >In order to take 20% off a price: Take the actual price. Divide the actual price by 100 and multiply it by 20 to calculate the savings.</p> 
+        <h1 className=' lg:text-3xl text-2xl font-semibold text-center' >Subscribe Now and get 20% off</h1>
+        <p className='lg:text-xl text-center text-gray-600 my-2' >In order to take 20% off a price: Take the actual price. Divide the actual price by 100 and multiply it by 20 to calculate the savings.</p> 
     </div>
     <div className="email flex justify-center py-20 ">
         <div className="email   ">

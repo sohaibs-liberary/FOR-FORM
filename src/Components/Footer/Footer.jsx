@@ -22,7 +22,7 @@ const  Footer = () => {
         <div className="uperfooter lg:flex lg:justify-around  ">
             <div className="logo"> 
                 <div className="img">
-                    <img src={Logo} alt="footer-logo"  className='py-4 lg:w-72 lg:h-32 w-40 h-24' />
+                    <img src={Logo} alt="footer-logo"  className='py-4 lg:w-64 lg:h-28 w-36 h-20' />
                 </div>
                 <div className="text">
                     <p className='text-start text-gray-600 lg:font-semibold font-medium text-wrap line-clamp-2 ' >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae <br/> quibusdam deleniti exercitationem.</p>
@@ -49,7 +49,7 @@ const  Footer = () => {
             </div>
              
         </div>
-           <p className='w-full h-[1px] bg-gray-800 my-2' ></p>
+           <p className='w-full h-[1px] bg-gray-400 my-2' ></p>
         <div className="lowerfooter">
             <h1 className='text-xl text-center py-6' >Copyright 2025@ Sohaib Malik 😎 - All Right Reserved.</h1>
         </div>
