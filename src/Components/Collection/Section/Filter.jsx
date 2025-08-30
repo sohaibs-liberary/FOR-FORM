@@ -25,7 +25,7 @@ const Filter = () => {
     ];
   return (
     <>
-    <div className="filercheckbox hidden lg:block "> {/*filterandcheck box*/}    
+    <div className="filercheckbox hidden lg:block sticky "> {/*filterandcheck box*/}    
           <div className="filter">    
             <h1 className='text-3xl font-semibold text-gray-800' >FILTER</h1>
           </div>

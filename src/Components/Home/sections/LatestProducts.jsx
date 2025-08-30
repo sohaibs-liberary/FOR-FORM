@@ -38,17 +38,16 @@ const LatestProducts = () => {
                 data.slice(0, 10).map((post) => (
                   <li
                     key={post.id}
-                    className=" border rounded-lg shadow m-3 text-center "
+                    className=" border rounded-lg shadow m-3  cursor-pointer"
                   >
                     <img
                       src={post.images[0]}
                       alt="image of products "
-                      className="max-w-[150px] max-h-[150px] rounded-md mx-10 lg:my-4 "
                     />
-                    <p className="font-semibold text-center my-2">
+                    <h6 className="font-semibold text my-2 mx-7">{post.title}</h6>
+                    <p className="font-semibold text-xl  my-2 mx-7">
                       ${post.price}
                     </p>
-                    <h1 className="font-bold text-2xl my-2 ">{post.title}</h1>
                   </li>
                 ) )
               ) : (

@@ -18,7 +18,7 @@ const BestSeller = () => {
           <div className=" flex gap-2 justify-center items-center">
             <p className="lg:text-5xl text-xl text-gray-600 font-semibold text-center ">
               Best
-              <span className="text-gray-800"> Seller</span>
+              <span className="text-gray-700"> Seller</span>
             </p>
             <p className=" w-20 md:w-14 h-[2px] bg-gray-800  "></p>
           </div>
@@ -36,14 +36,14 @@ const BestSeller = () => {
                 data.slice(0, 5).map((post, index) => (
                   <li
                     key={index}
-                    className="border-gray-300 shadow border-[1px]  rounded-lg m-4 py-3 px-10"
+                    className="border-gray-300 shadow border-[1px]  rounded-lg m-4 "
                   >
                     <img
                       src={post.images[0]}
                       alt="Best Selling Products"
-                      className=" flex justify-center max-w-[220px] max-h-[220px] rounded-lg  "
+                      className=" "
                     />
-                    <h1 className="text-center text-2xl text-gray-800 font-semibold py-4 ">
+                    <h1 className=" text-2xl text-gray-800 font-semibold py-4 ">
                       {post.title}
                     </h1>
                   </li>
