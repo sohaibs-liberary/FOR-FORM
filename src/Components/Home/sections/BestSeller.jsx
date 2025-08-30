@@ -30,10 +30,10 @@ const BestSeller = () => {
           </div>
         </div>
         <div className="API">
-          <div className=" lg:max-w-[1600px] lg:max-h-[1600px] lg:mx-36  ">
+          <div className=" lg:max-w-[1800px] lg:max-h-[1400px] lg:mx-36  ">
             <ul className="lg:flex justify-center   ">
               {data.length > 0 ? (
-                data.slice(0, 4).map((post, index) => (
+                data.slice(0, 5).map((post, index) => (
                   <li
                     key={index}
                     className="border-gray-300 shadow border-[1px]  rounded-lg m-4 py-3 px-10"
@@ -41,7 +41,7 @@ const BestSeller = () => {
                     <img
                       src={post.images[0]}
                       alt="Best Selling Products"
-                      className=" flex justify-center max-w-[290px] max-h-[290px] rounded-lg  "
+                      className=" flex justify-center max-w-[220px] max-h-[220px] rounded-lg  "
                     />
                     <h1 className="text-center text-2xl text-gray-800 font-semibold py-4 ">
                       {post.title}
