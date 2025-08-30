@@ -51,7 +51,7 @@ const  Footer = () => {
         </div>
            <p className='w-full h-[1px] bg-gray-800 my-2' ></p>
         <div className="lowerfooter">
-            <h1 className='text-xl text-center py-6' >Copyright 2025@ Sohaib Malik - All Right Reserved.</h1>
+            <h1 className='text-xl text-center py-6' >Copyright 2025@ Sohaib Malik 😎 - All Right Reserved.</h1>
         </div>
     </div>
     </>
