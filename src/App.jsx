@@ -6,6 +6,7 @@ import Footer from './Components/Footer/Footer.jsx';
 import Home from './Components/Home/Home.jsx';
 import Collection from './Components/Collection/Collection.jsx';
 import About from './Components/About/About.jsx';
+import Contact from './Components/Contant/Contant.jsx';
 const App = () => {
   return (
     <>
@@ -15,7 +16,8 @@ const App = () => {
       <Route path='/' element={<Home />} />
        <Route path='/collection' element={<Collection />} />
        <Route path='/about' element={<About />} />
-     </Routes>
+       <Route path='/contact' element={<Contact />} />
+        </Routes>
     <Footer />
     </>
     )
