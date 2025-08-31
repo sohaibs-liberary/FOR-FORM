@@ -4,8 +4,8 @@ import img from "/src/assets/images/contact_img.e07eab916b878014c843.png";
 const ContactUs = () => {
   return (
     <>
-      <div className="Aboutus">
-        <div className="aboutus text-center ">
+      <div className="contacus">
+        <div className="contactus text-center ">
           <div className=" flex gap-2 justify-center items-center">
             <p className="lg:text-3xl text-xl text-gray-500 font-semibold text-center ">
               CONTACT
@@ -27,7 +27,7 @@ const ContactUs = () => {
             </div>
             <div className="grid gap-2 my-6" >
            <p  className="text-xl text-gray-500" >Tel : (051) 555-0123</p>
-           <p  className="text-xl text-gray-500" >Email: suleman@forever.com</p>
+           <p  className="text-xl text-gray-500" >Email: sohaib@forever.com</p>
             </div>
             <div className=" grid gap-3">
               <p className="text-2xl font-bold text-gray-600 lg:my-4"  >Careers at Forever</p>

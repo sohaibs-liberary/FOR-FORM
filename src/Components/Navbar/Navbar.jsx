@@ -36,7 +36,8 @@ function Navbar() {
                     isActive
                       ? "border-b-2 border-gray-700 pb-1 text-gray-700"
                       : "pb-1 text-gray-700 hover:text-gray-700"
-                  }
+                  
+                    }
                 >
                   {menu.name}
                 </NavLink>

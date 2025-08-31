@@ -7,6 +7,7 @@ import Home from './Components/Home/Home.jsx';
 import Collection from './Components/Collection/Collection.jsx';
 import About from './Components/About/About.jsx';
 import Contact from './Components/Contant/Contant.jsx';
+import SingleProductPage from './Components/SingleProductPage/SingleProductPage.jsx';
 const App = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const App = () => {
        <Route path='/collection' element={<Collection />} />
        <Route path='/about' element={<About />} />
        <Route path='/contact' element={<Contact />} />
+       <Route path='/productpage' element={<SingleProductPage />} />
         </Routes>
     <Footer />
     </>
