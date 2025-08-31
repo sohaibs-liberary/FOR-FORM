@@ -33,12 +33,12 @@ const LatestProducts = () => {
         {/* API IMPORT */}
         <div className="API lg:translate-x-40">
           <div className="posts lg:h-[400px ] lg:w-[1400px]  lg:items-center  lg:flex lg:justify-center ">
-            <ul className="postsitems grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 ">
+            <ul className="postsitems grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5  ">
               {data.length > 0 ? (
                 data.slice(0, 10).map((post) => (
                   <li
                     key={post.id}
-                    className=" border rounded-lg shadow m-3  cursor-pointer"
+                    className=" border rounded-lg shadow m-3  cursor-pointer "
                   >
                     <img
                       src={post.images[0]}
