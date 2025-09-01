@@ -39,6 +39,9 @@ const LatestProducts = () => {
                   <li
                     key={post.id}
                     className=" border rounded-lg shadow m-3  cursor-pointer "
+                    onClick={()=>{
+                      window.location.href = `/products/${post.id}`;
+                    }}
                   >
                     <img
                       src={post.images[0]}
