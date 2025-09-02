@@ -36,7 +36,10 @@ const BestSeller = () => {
                 data.slice(0, 5).map((post, index) => (
                   <li
                     key={index}
-                    className="border-gray-300 shadow border-[1px]  rounded-lg m-4 "
+                    className="border-gray-300 shadow border-[1px]  rounded-lg m-4 cursor-pointer "
+                     onClick={()=>{
+                      window.location.href = `/products/${post.id}`;
+                    }}
                   >
                     <img
                       src={post.images[0]}

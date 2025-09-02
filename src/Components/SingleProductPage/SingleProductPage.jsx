@@ -85,6 +85,9 @@ const SingleProductPage = () => {
                   <h6 className="title text-2xl text-gray-500 text-wrap">
                     {data.description}
                   </h6>
+                  <h6 className="title text-3xl  text-gray-800 text-wrap">
+                    ${data.price}
+                  </h6>
                 </div>
               ) : (
                 <p>Loading...</p>

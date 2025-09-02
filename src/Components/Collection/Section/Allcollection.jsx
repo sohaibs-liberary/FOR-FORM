@@ -29,7 +29,10 @@ const Allcollection = () => {
                 data.slice(0,).map((post) => (
                   <li
                     key={post.id}
-                    className=" border rounded-lg shadow  m-2 "
+                    className=" border rounded-lg shadow  m-2  cursor-pointer "
+                     onClick={()=>{
+                      window.location.href = `/products/${post.id}`;
+                    }}
                   >
                     <img
                       src={post.images[0]}
