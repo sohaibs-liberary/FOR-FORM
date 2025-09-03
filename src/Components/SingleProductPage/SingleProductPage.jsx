@@ -123,7 +123,11 @@ const SingleProductPage = () => {
 
             {/* Button */}
             <div className="btn">
-              <button className="bg-gray-950 text-white text-2xl font-sans py-3 px-32 rounded-md">
+              <button className="bg-gray-950 text-white text-2xl font-sans py-3 px-32 rounded-md"
+                onClick={()=>{
+                      window.location.href = `/cart`;
+                    }}
+               >
                 Add To Cart
               </button>
             </div>
